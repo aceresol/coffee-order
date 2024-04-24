@@ -1,6 +1,7 @@
 package edu.iu.habahram.coffeeorder.controllers;
 
 import edu.iu.habahram.coffeeorder.model.Customer;
+import edu.iu.habahram.coffeeorder.repository.CustomerFileRepository;
 import edu.iu.habahram.coffeeorder.repository.CustomerRepository;
 import edu.iu.habahram.coffeeorder.security.TokenService;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -39,8 +40,8 @@ public class AuthenticationController {
         Authentication authentication = authenticationManager
                 .authenticate(
                         new UsernamePasswordAuthenticationToken(
-                                customer.username(),
-                                customer.password()));
+                                customer.getUsername(),
+                                customer.getPassword()));
         return tokenService.generateToken(authentication);
     }
 }

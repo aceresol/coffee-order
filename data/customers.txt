@@ -1,0 +1,2 @@
+anthony,$2a$10$CB4GHtijwIgrHgYB/hGXg.s1vNJUR8R8ujb6mbAFVXe1yV7BTwvQq,anthony@email.com
+john,$2a$10$PBsAmwJxvEhWKjJYSvCeLulqtQgRQ2XIdiz6ExpnvAFX3oquGxZtW,anthony@email.com
